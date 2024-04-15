@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+      "target": "ES2017",
+      "moduleResolution": "Node",
+      "experimentalDecorators": true,
+      "jsx": "preserve",
+      "jsxFactory": "this.$render",
+      "jsxFragmentFactory": "this.$render",
+      "esModuleInterop": true,
+      "resolveJsonModule": true,
+      "forceConsistentCasingInFileNames": true,
+      "declaration": false,
+      "baseUrl": ".",
+      "paths": {
+        "@ijstech/components": ["node_modules/@ijstech/components"],
+        "@scom-social-relay-admin/*": ["src/*"],
+      }
+    },
+    "include": ["src/*.tsx", "src/*.ts", "src/createRelay/mqttStep.tsx", "src/createRelay/redisStep.tsx", "src/createRelay/setupModeStep.tsx", "src/createRelay/storageStep.tsx", "src/createRelay/databaseStep.tsx"],
+    "exclude": ["node_modules"]
+  }
+  
+  
